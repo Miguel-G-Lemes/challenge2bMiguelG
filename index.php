@@ -13,8 +13,8 @@ $result = mysqli_query($conn, "SELECT * FROM usuarios");
 <body class="container mt-4">
 
     <h2>Usuários</h2>
-    <a href="create.php" class="btn btn-primary mb-3">Novo Usuário</a>
-
+   <?php if($user == "leo"){ echo "<a href='create.php' class='btn btn-primary mb-3'>Novo
+   Usuário</a>";}     ?>
     <table class="table table-bordered">
         <tr>
             <th>ID</th>
